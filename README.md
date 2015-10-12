@@ -1,5 +1,5 @@
 # PicSlydr
-A sliding picture game for your IPhone
+A sliding picture game for IOS Devices
 
 This is Ethan's project!':)
 
