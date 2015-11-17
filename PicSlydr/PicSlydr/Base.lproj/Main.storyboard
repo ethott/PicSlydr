@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-oY-7pw">
+                                <rect key="frame" x="-34" y="12" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oc-92-gdW">
+                                <rect key="frame" x="253" y="555" width="93" height="30"/>
+                                <state key="normal" title="ToggleButton"/>
+                                <connections>
+                                    <action selector="toggleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1v-ml-eaW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Oc-92-gdW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BSQ-dT-i8M"/>
+                            <constraint firstItem="Sjc-oY-7pw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IUd-rY-4Nb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Oc-92-gdW" secondAttribute="bottom" constant="15" id="XdD-v5-qHn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sjc-oY-7pw" secondAttribute="bottom" id="dT4-fg-lRY"/>
+                            <constraint firstItem="Sjc-oY-7pw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oIy-Tl-kv5"/>
+                            <constraint firstAttribute="trailing" secondItem="Sjc-oY-7pw" secondAttribute="trailing" id="oSg-1U-0iG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Sjc-oY-7pw" id="xVw-Xf-cp2"/>
+                        <outlet property="toggleButton" destination="8Oc-92-gdW" id="QRg-KW-zJK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="224" y="168"/>
         </scene>
     </scenes>
 </document>

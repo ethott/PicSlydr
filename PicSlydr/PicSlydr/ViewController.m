@@ -8,16 +8,46 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
 
+
+@interface ViewController ()
 @end
 
 @implementation ViewController
 
+
+int  state;
+NSMutableArray *views;
+
+
+
+
+- (IBAction)toggleButton:(id)sender {
+    state--;
+    if(state < 0) {
+        state = 2;
+    
+    }
+    self.imageView.image = [views objectAtIndex:state];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    state = 2;
+    views = [[NSMutableArray alloc] init];
+  
+    [views addObject:  [UIImage imageNamed:@"CookieMonster"]];
+    [views addObject:  [UIImage imageNamed:@"BigBird"]];
+    [views addObject:  [UIImage imageNamed:@"CartMan"]];
+    
+    self.imageView.image = [views objectAtIndex:state];
+    
+    
+    
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
