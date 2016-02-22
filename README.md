@@ -4,7 +4,7 @@ A sliding picture game for IOS Devices
 This is Ethan's project!':)
 
 Nathan is working on this project too!
-
+<p><h2>License and Author</h2> </p>
 Author: Ethan Ott(<a href="mailto:ethan84096@gmail.com">Gmail</a>)<p>
 <p>
  "Permission is hereby granted, free of charge, to any person
