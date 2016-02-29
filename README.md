@@ -1,9 +1,22 @@
 # PicSlydr
 A sliding picture game for IOS Devices
 
-This is Ethan's project!':)
+<p>This is Ethan's project!':)
+Nathan is working on this project too!</p>
+<h2>How to Contribute?</h2>
 
-Nathan is working on this project too!
+ <p>
+  <ol>
+ <li>Before starting work on a new feature, enhancement, or fix, please create an issue and optionally assign it to yourself or a developer.</li>
+<li>Fork the repository and make your changes against the 'development' branch (not master).</li>
+<li>After making your changes in your fork, run tests and ensure that the page looks good and works with all supported browsers.</li>
+<li>If you have made a series of commits into the 'development' branch, please try to squash them into a small number of commits.</li>
+<li>Issue a Pull Request against the 'development' branch (not master).</li>
+<li>I will review your code and may optionally request conformance, functional or other changes. Work with them to resolve any issues.</li>
+<li>Upon acceptance, your code will be merged into the master branch and will become available for all.</li>
+<ol>
+
+
 <p><h2>License and Author</h2> </p>
 Author: Ethan Ott(<a href="mailto:ethan84096@gmail.com">Gmail</a>)<p>
 <p>
